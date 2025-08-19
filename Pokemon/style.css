@@ -1,0 +1,289 @@
+/* Reset & base */
+body, h1, h2, h3, h4, p, ul {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+body {
+  background: #fdfbf7;
+  color: #333;
+  line-height: 1.8;
+}
+
+/* Navbar */
+header {
+  background-color: #dbae19;
+  color: white;
+  padding: 0.7rem 2rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+nav ul li {
+  position: relative;
+}
+nav ul li a { 
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+nav ul li a:hover {
+  color: #333;
+  background-color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+}
+
+/* Dropdown */
+.dropdown:hover .list {
+  display: block;
+}
+.list {
+  display: none;
+  position: absolute;
+  top: 2rem;
+  background: white;
+  min-width: 160px;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+.list a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #333;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.list a:hover {
+  background: #f8f1da;
+  color: #d4af37;
+}
+
+/* Buttons */
+button, .btn-primary {
+  background-color: #d4af37;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover, .btn-primary:hover {
+  background-color: #b89015;
+}
+
+/* Intro */
+.intro {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+.intro img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Hero */
+.hero {
+  background: #fff8e1;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.8rem;
+}
+.hero p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Pokedex */
+.pokedex-dir {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  margin: 0.5rem;
+  padding: 2rem;
+  gap: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.pokedex img {
+  width: 600px;
+}
+.pokedex-tag {
+  text-align: center;
+}
+
+/* Product cards */
+.products {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.products article {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  padding: 1.5rem;
+  width: 250px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.products article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+.products img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+/* Aside */
+aside {
+  background: #fff3e0;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  text-align: center;
+  border-left: 5px solid #d4af37;
+  max-width: 600px;
+  border-radius: 8px;
+}
+
+/*customer care*/
+.feedback-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+  background: #f4f7f6;
+}
+
+.feedback-container {
+  display: flex;
+  width: 90%;
+  max-width: 1000px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.feedback-img {
+  flex: 1; /* 50% */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e8f5e9;
+  padding: 20px;
+}
+
+.feedback-img img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.feedback-box {
+  flex: 1; /* 50% */
+  padding: 30px;
+}
+
+fieldset {
+  border: 2px solid #4CAF50;
+  border-radius: 12px;
+  padding: 25px;
+}
+
+legend {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4CAF50;
+  padding: 0 10px;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.feedback-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  width: 100%;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 6px rgba(76,175,80,0.3);
+}
+
+.feedback-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.feedback-form button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  width: fit-content;
+}
+
+.feedback-form button:hover {
+  background: #45a049;
+  transform: scale(1.03);
+}
+
+
+
+/* Footer */
+footer {
+  background: #d4af37;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
